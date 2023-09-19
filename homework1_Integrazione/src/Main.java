@@ -3,11 +3,10 @@ public class Main{
 
        LinkedList<Object> test = new LinkedList<>();
 
+       test.size();
        test.add("1");
        test.remove("1");
 
-
        System.out.println(test.isEmpty());
-
     }
 }
