@@ -73,9 +73,9 @@ public class LinkedList<T> {
         return current.getData();
     }
 
-    private static class Node<T> {
+    class Node<T> {
         private T data;
-        private Node<T> next;
+        private Node next;
 
         public Node(T data) {
             this.data = data;

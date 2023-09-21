@@ -47,4 +47,12 @@ public class LinkedListTest {
         assertTrue(list.isEmpty());
         assertEquals(0, list.size());
     }
+
+    @Test
+    public void testNodeConstructor() {
+        Integer testData = 42;
+        LinkedList<Integer>.Node<Integer> node = list.new Node<Integer> (testData);
+        assertEquals(testData, node.getData());
+        assertNull(node.getNext());
+    }
 }
