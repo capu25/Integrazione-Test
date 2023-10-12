@@ -76,23 +76,27 @@ public class LinkedList<T> {
 
     class Node<T> {
         private T data;
-        private Node next;
+        private Node<T> next;
 
         public Node(T data) {
             this.data = data;
             this.next = null;
         }
 
+        //NO TEST
         public T getData() {
             return data;
         }
 
+        //NO TEST
         public Node<T> getNext() {
             return next;
         }
 
+        //NO TEST
         public void setNext(Node<T> next) {
             this.next = next;
         }
     }
+
 }
